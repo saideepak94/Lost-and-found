@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Lost and Found</title>
+</head>
+<body>
+  <h1>Lost and Found</h1>
+  <form id="lostItemForm" enctype="multipart/form-data">
+    <label for="itemName">Item Name:</label>
+    <input type="text" id="itemName" name="itemName" required>
+
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" required></textarea>
+
+    <label for="contactInfo">Contact Information:</label>
+    <input type="text" id="contactInfo" name="contactInfo" required>
+
+    <label for="image">Upload Image:</label>
+    <input type="file" id="image" name="image" accept="image/*">
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <div id="lostItemsList"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
